@@ -24,12 +24,13 @@ class ProfileController{
             const {id}=req.params
             // const authUser=req.user
 
+            
+
             if (!req.files || Object.keys(req.files).length === 0) {
                 return res
                     .status(400)
                     .json({ status: 400, message: "Profile image is required." });
             }
-
             const profile=req.files.profile
             const message=ImageValidator(profile?.size,profile?.mimetype)
 
