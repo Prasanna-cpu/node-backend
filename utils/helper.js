@@ -22,3 +22,7 @@ export const bytesToMb=(bytes)=>{
 export const generateURandomNum=()=>{
     return uuid();
 }
+
+export const getImageUrl=(imageName)=>{
+    return `${process.env.APP_URL}/images`
+}

@@ -46,7 +46,7 @@ class ProfileController{
 
 
             const imgExt=profile?.name.split(".")
-            const imageName=generateURandomNum()+imgExt[imgExt.length-1]
+            const imageName=generateURandomNum()+"."+imgExt[imgExt.length-1]
 
             const uploadPath=process.cwd()+"/public/images/"+imageName
 

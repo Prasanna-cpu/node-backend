@@ -18,6 +18,8 @@ app.use("/api/",router)
 
 app.use(fileUpload())
 
+app.use(express.static("public"))
+
 
 const port=process.env.PORT;
 
